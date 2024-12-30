@@ -1,3 +1,47 @@
+# The Aether - NeoForge - 1.21.1-1.5.1
+
+Additions
+
+- Added a new common server option `"Overworld-length Aether time cycle"` for changing the Aether's time from 3-times the length of the Overworld's day cycle to the same length as it.
+- Added a new common server option `"Syncs time cycles"` for making the Aether's time sync with the Overworld's when it hits noon after eternal day has been banished.
+- Added a new common client option `"Disables Aether's clouds"` for configuring whether clouds should render in the Aether dimension.
+- Added a new tag `ores_in_ground/holystone` for Aether ores.
+- Compatibility with Immersive Portals.
+- Update de_at translation.
+- Update en_ud translation.
+- Update es_es translation.
+- Update es_mx translation.
+- Update fr_fr translation.
+- Update it_it translation.
+- Update ja_jp translation.
+- Update ko_kr translation.
+- Update lol_us translation.
+- Update ms_my translation.
+- Update pl_pl translation.
+- Update ru_ru translation.
+- Update sk_sk translation.
+- Update sv_se translation.
+- Update tok translation.
+- Update uk_ua translation.
+- Update zh_cn translation.
+
+Fixes
+
+- Fix mount mid-air jumps being triggered when jumping from the ground.
+- Fix Sun Spirit and Fire Minion audio not playing.
+- Fix the Aether Portal trigger sound not playing.
+- Fix some discs playing in stereo mode.
+- Fix Slider velocity being slower than it should be.
+- Fix Aerwhales getting stuck on overhangs.
+- Fix movement keys that cancel each other still disabling the Shield of Repulsion without moving.
+- Fix TNT Presents having incorrect gravity.
+- Fix Dart Shooters not accepting Infinity in creative mode.
+- Fix Aether materials not working with new armor trims.
+- Fix Skyroot Poison and Remedy Buckets not being in the `buckets` tag.
+- Fix Skyroot Buckets not being in the `buckets/empty` tag.
+- Fix a crash when trying to load a loot modifier asynchronously.
+- Fix Supplementaries compatibility.
+
 # The Aether - NeoForge - 1.21.1-1.5.1-beta.4
 
 Changes
