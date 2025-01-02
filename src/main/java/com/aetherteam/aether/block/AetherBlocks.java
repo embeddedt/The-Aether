@@ -183,7 +183,7 @@ public class AetherBlocks {
     public static final DeferredBlock<WallBlock> MOSSY_HOLYSTONE_WALL = register("mossy_holystone_wall", () -> new WallBlock(Block.Properties.ofFullCopy(AetherBlocks.MOSSY_HOLYSTONE.get()).forceSolidOn()));
     public static final DeferredBlock<WallBlock> ICESTONE_WALL = register("icestone_wall", () -> new IcestoneWallBlock(Block.Properties.ofFullCopy(AetherBlocks.ICESTONE.get()).forceSolidOn()));
     public static final DeferredBlock<WallBlock> HOLYSTONE_BRICK_WALL = register("holystone_brick_wall", () -> new WallBlock(Block.Properties.ofFullCopy(AetherBlocks.HOLYSTONE_BRICKS.get()).forceSolidOn()));
-    public static final DeferredBlock<WallBlock> AEROGEL_WALL = register("aerogel_wall", () -> new AerogelWallBlock(Block.Properties.of().mapColor(MapColor.DIAMOND).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).strength(1.0F, 2000.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().isViewBlocking(AetherBlocks::never)));
+    public static final DeferredBlock<WallBlock> AEROGEL_WALL = register("aerogel_wall", () -> new AerogelWallBlock(Block.Properties.of().mapColor(MapColor.DIAMOND).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).strength(1.0F, 2000.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().isViewBlocking(AetherBlocks::never).noOcclusion()));
 
     public static final DeferredBlock<StairBlock> SKYROOT_STAIRS = register("skyroot_stairs",
             () -> new StairBlock(SKYROOT_PLANKS.get().defaultBlockState(), Block.Properties.ofFullCopy(AetherBlocks.SKYROOT_PLANKS.get())));

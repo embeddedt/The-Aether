@@ -1,6 +1,7 @@
 package com.aetherteam.aether.block.construction;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -30,5 +31,14 @@ public class AerogelWallBlock extends WallBlock {
     @Override
     public VoxelShape getVisualShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return Shapes.empty();
+    }
+
+    /**
+     * [CODE COPY] - {@link net.minecraft.world.level.block.HalfTransparentBlock#skipRendering(BlockState, BlockState, Direction)}.
+     *
+     * This prevents adjacent walls from rendering redundant faces.
+     */
+    protected boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
+        return adjacentBlockState.is(this) || super.skipRendering(state, adjacentBlockState, side);
     }
 }
